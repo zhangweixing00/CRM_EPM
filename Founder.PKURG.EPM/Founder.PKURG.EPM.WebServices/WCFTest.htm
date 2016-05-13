@@ -1,0 +1,199 @@
+﻿<html>
+<head>
+    <title>测试WCF</title>
+    <script type="text/javascript">
+        var selectArray = [];
+        selectArray["InterfaceService"] = ["GetValueRequest"];
+
+        
+
+    
+    </script>
+    <script type="text/javascript">
+        var XhrType = { "POST": "POST", "GET": "GET" };
+
+        function invokeMethod() {
+            var txtServiceName = document.getElementById("serviceName").value;
+            var txtMethodName = document.getElementById("methodName").value;
+
+            var url = txtServiceName + ".svc/" + txtMethodName;
+           // var url = document.getElementById("part").value + '/' + txtServiceName + ".svc/" + txtMethodName;
+            var txtXhrType = document.getElementById("xhrType").value;
+            var data = document.getElementById("textJson").value;
+            if (txtXhrType == XhrType.GET) {
+                if (data != "" && data != null) {
+                    var index = data.indexOf("=") + 1;
+                    var length = data.length;
+                    var tempData = data.substring(index, length);
+                    if (isJsonObject(tempData)) {
+                        url += data;
+                        data = null;
+                    }
+                    else {
+                        return;
+                    }
+                }
+            }
+            else {
+                if (data) {
+                    if (!isJsonObject(data)) {
+                        return;
+                    }
+                }
+            }
+            var xhr = getXMLHttpRequest();
+            if (xhr != null) {
+                document.body.setAttribute("disabled", "disabled");
+                xhr.open(txtXhrType, url, true);
+                xhr.setRequestHeader("Accept", "application/json");
+                xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+                xhr.onreadystatechange = function () {
+                    callBack(this);
+                };
+                xhr.send(data);
+            }
+
+            function callBack(xhr) {
+                if (xhr.readyState == 4) {
+                    var status = "";
+                    if (xhr.status == 204 || xhr.status == 1223 || xhr.status == 200) {
+                        status = "<center><font color=green>成功[状态码:" + xhr.status + "][状态描述:" + xhr.statusText + "]</font></center>";
+                    } else {
+                        status = "<center><font color=red>失败[状态码:" + xhr.status + "][状态描述:" + xhr.statusText + "]</font></center>";
+                    }
+                    status += "<hr/><div style='margin: 10px'>";
+                    var responseText = "";
+                    try {
+                        responseText = decodeURI(xhr.responseText);
+                    }
+                    catch (e) {
+                        responseText = xhr.responseText;
+                    }
+                    finally {
+                        responseText = xhr.responseText;
+                    }
+                    var text = status + responseText + "</div>";
+                    document.getElementById("response").innerHTML = text;
+                    document.body.removeAttribute("disabled");
+                }
+            }
+            //获得XHR对象
+            function getXMLHttpRequest() {
+                if (window.XMLHttpRequest) {
+                    return new window.XMLHttpRequest();
+                }
+                return null;
+            }
+            //检测字符串是否是有效的JSON数据
+            function isJsonObject(text) {
+                var isJson = true;
+                try {
+                    var json = eval("(" + text + ")");
+                }
+                catch (e) {
+                    isJson = false;
+                    alert(e.message + "\r\n不是有效的JSON数据\r\n请确保没有多余的空格或者制表符");
+                }
+                return isJson;
+            }
+        }
+
+        function serviceNameChange() {
+            var txtServiceName = document.getElementById("serviceName").value;
+            var methodNameList = selectArray[txtServiceName].sort();
+            var selectMethodName = document.getElementById("methodName");
+            selectMethodName.innerHTML = "";
+            InitItems(selectMethodName, methodNameList);
+        }
+
+        function loadSelectList() {
+            var selectServiceName = document.getElementById("serviceName");
+            var temp = new Array();
+            for (var item in selectArray) {
+                temp.push(item);
+            }
+            temp = temp.sort();
+            InitItems(selectServiceName, temp);
+            serviceNameChange();
+        }
+        function InitItems(selectElement, values) {
+            selectElement.appendChild(createOption(values[0], true));
+            for (var i = 1; i < values.length; i++) {
+                var tempOption = createOption(values[i]);
+                selectElement.appendChild(tempOption);
+            }
+        }
+        function createOption(value, selected) {
+            var option = document.createElement("option");
+            option.setAttribute("value", value);
+            if (selected) {
+                option.setAttribute("selected", "selected");
+            }
+            var textNode = document.createTextNode(value);
+            option.appendChild(textNode);
+            return option;
+        }
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            text-align: right;
+        }
+    </style>
+</head>
+<body onload="loadSelectList()">
+    <div style="margin: 60px">
+        <center>
+            <table>
+                <tr>
+                    <td class="style1">
+                        请求类型：
+                    </td>
+                    <td>
+                        <select id="xhrType" style="float: left; width: 100px;">
+                            <option value="GET">GET</option>
+                            <option value="POST" selected="selected">POST</option>
+                        </select>
+                        <select id="part" style="float: left; width: 100px;">
+                            <option value="Campaign">Campaign</option>
+                            <option value="Case">Case</option>
+                            <option value="Sales">Sales</option>
+                            <option value="TCWCF">TCWCF</option>
+                            <option value="HistoryData">HistoryData</option>
+                            <option value="WorkFlow">WorkFlow</option>
+                            <option value="Finances">Finances</option>
+                            <option value="WorkTime">WorkTime</option>
+
+                            <option value="CommonService" selected="selected">CommonService</option>
+                             <option value="Interface">Interface</option>
+                        </select>
+                        <input type="button" value="执行" onclick="invokeMethod()" style="float: right; width: 200px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style1">
+                        服务/方法：
+                    </td>
+                    <td>
+                        <select id="serviceName" onchange="serviceNameChange()">
+                        </select>
+                        <select id="methodName">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style1">
+                        POST/GET(JSON格式)：
+                    </td>
+                    <td>
+                        <textarea id="textJson" cols="80" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <hr />
+        <div id="response">
+        </div>
+    </div>
+</body>
+</html>

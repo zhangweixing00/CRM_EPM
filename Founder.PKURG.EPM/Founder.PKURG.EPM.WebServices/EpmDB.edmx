@@ -1,0 +1,1137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EPM_MSCRMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EPM_MSCRMModelStoreContainer">
+          <EntitySet Name="epm_incomeindex_second" EntityType="EPM_MSCRMModel.Store.epm_incomeindex_second" store:Type="Views" store:Schema="dbo" store:Name="epm_incomeindex_second">
+            <DefiningQuery>SELECT 
+      [epm_incomeindex_second].[CreatedByName] AS [CreatedByName], 
+      [epm_incomeindex_second].[CreatedByYomiName] AS [CreatedByYomiName], 
+      [epm_incomeindex_second].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+      [epm_incomeindex_second].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+      [epm_incomeindex_second].[ModifiedByName] AS [ModifiedByName], 
+      [epm_incomeindex_second].[ModifiedByYomiName] AS [ModifiedByYomiName], 
+      [epm_incomeindex_second].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+      [epm_incomeindex_second].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+      [epm_incomeindex_second].[epm_itemName] AS [epm_itemName], 
+      [epm_incomeindex_second].[OwnerId] AS [OwnerId], 
+      [epm_incomeindex_second].[OwnerIdName] AS [OwnerIdName], 
+      [epm_incomeindex_second].[OwnerIdYomiName] AS [OwnerIdYomiName], 
+      [epm_incomeindex_second].[OwnerIdDsc] AS [OwnerIdDsc], 
+      [epm_incomeindex_second].[OwnerIdType] AS [OwnerIdType], 
+      [epm_incomeindex_second].[OwningUser] AS [OwningUser], 
+      [epm_incomeindex_second].[OwningTeam] AS [OwningTeam], 
+      [epm_incomeindex_second].[epm_incomeindex_secondId] AS [epm_incomeindex_secondId], 
+      [epm_incomeindex_second].[CreatedOn] AS [CreatedOn], 
+      [epm_incomeindex_second].[CreatedBy] AS [CreatedBy], 
+      [epm_incomeindex_second].[ModifiedOn] AS [ModifiedOn], 
+      [epm_incomeindex_second].[ModifiedBy] AS [ModifiedBy], 
+      [epm_incomeindex_second].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+      [epm_incomeindex_second].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+      [epm_incomeindex_second].[OwningBusinessUnit] AS [OwningBusinessUnit], 
+      [epm_incomeindex_second].[statecode] AS [statecode], 
+      [epm_incomeindex_second].[statuscode] AS [statuscode], 
+      [epm_incomeindex_second].[VersionNumber] AS [VersionNumber], 
+      [epm_incomeindex_second].[ImportSequenceNumber] AS [ImportSequenceNumber], 
+      [epm_incomeindex_second].[OverriddenCreatedOn] AS [OverriddenCreatedOn], 
+      [epm_incomeindex_second].[TimeZoneRuleVersionNumber] AS [TimeZoneRuleVersionNumber], 
+      [epm_incomeindex_second].[UTCConversionTimeZoneCode] AS [UTCConversionTimeZoneCode], 
+      [epm_incomeindex_second].[epm_name] AS [epm_name], 
+      [epm_incomeindex_second].[epm_prepareprofiletax] AS [epm_prepareprofiletax], 
+      [epm_incomeindex_second].[epm_aftertaxrate] AS [epm_aftertaxrate], 
+      [epm_incomeindex_second].[epm_aftertaxrateinner] AS [epm_aftertaxrateinner], 
+      [epm_incomeindex_second].[epm_item] AS [epm_item]
+      FROM [dbo].[epm_incomeindex_second] AS [epm_incomeindex_second]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="epm_ProjectApproval" EntityType="EPM_MSCRMModel.Store.epm_ProjectApproval" store:Type="Views" store:Schema="dbo" store:Name="epm_ProjectApproval">
+            <DefiningQuery>SELECT 
+      [epm_ProjectApproval].[CreatedByName] AS [CreatedByName], 
+      [epm_ProjectApproval].[CreatedByYomiName] AS [CreatedByYomiName], 
+      [epm_ProjectApproval].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+      [epm_ProjectApproval].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+      [epm_ProjectApproval].[ModifiedByName] AS [ModifiedByName], 
+      [epm_ProjectApproval].[ModifiedByYomiName] AS [ModifiedByYomiName], 
+      [epm_ProjectApproval].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+      [epm_ProjectApproval].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+      [epm_ProjectApproval].[epm_ApprovePersonYomiName] AS [epm_ApprovePersonYomiName], 
+      [epm_ProjectApproval].[epm_ApprovePersonName] AS [epm_ApprovePersonName], 
+      [epm_ProjectApproval].[epm_ProjectName] AS [epm_ProjectName], 
+      [epm_ProjectApproval].[OwnerId] AS [OwnerId], 
+      [epm_ProjectApproval].[OwnerIdName] AS [OwnerIdName], 
+      [epm_ProjectApproval].[OwnerIdYomiName] AS [OwnerIdYomiName], 
+      [epm_ProjectApproval].[OwnerIdDsc] AS [OwnerIdDsc], 
+      [epm_ProjectApproval].[OwnerIdType] AS [OwnerIdType], 
+      [epm_ProjectApproval].[OwningUser] AS [OwningUser], 
+      [epm_ProjectApproval].[OwningTeam] AS [OwningTeam], 
+      [epm_ProjectApproval].[epm_ProjectApprovalId] AS [epm_ProjectApprovalId], 
+      [epm_ProjectApproval].[CreatedOn] AS [CreatedOn], 
+      [epm_ProjectApproval].[CreatedBy] AS [CreatedBy], 
+      [epm_ProjectApproval].[ModifiedOn] AS [ModifiedOn], 
+      [epm_ProjectApproval].[ModifiedBy] AS [ModifiedBy], 
+      [epm_ProjectApproval].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+      [epm_ProjectApproval].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+      [epm_ProjectApproval].[OwningBusinessUnit] AS [OwningBusinessUnit], 
+      [epm_ProjectApproval].[statecode] AS [statecode], 
+      [epm_ProjectApproval].[statuscode] AS [statuscode], 
+      [epm_ProjectApproval].[VersionNumber] AS [VersionNumber], 
+      [epm_ProjectApproval].[ImportSequenceNumber] AS [ImportSequenceNumber], 
+      [epm_ProjectApproval].[OverriddenCreatedOn] AS [OverriddenCreatedOn], 
+      [epm_ProjectApproval].[TimeZoneRuleVersionNumber] AS [TimeZoneRuleVersionNumber], 
+      [epm_ProjectApproval].[UTCConversionTimeZoneCode] AS [UTCConversionTimeZoneCode], 
+      [epm_ProjectApproval].[epm_name] AS [epm_name], 
+      [epm_ProjectApproval].[epm_Project] AS [epm_Project], 
+      [epm_ProjectApproval].[epm_StartTime] AS [epm_StartTime], 
+      [epm_ProjectApproval].[epm_EndTime] AS [epm_EndTime], 
+      [epm_ProjectApproval].[epm_ApprovePerson] AS [epm_ApprovePerson], 
+      [epm_ProjectApproval].[epm_OA] AS [epm_OA], 
+      [epm_ProjectApproval].[epm_block] AS [epm_block], 
+      [epm_ProjectApproval].[epm_itemName] AS [epm_itemName], 
+      [epm_ProjectApproval].[epm_newapproveperson] AS [epm_newapproveperson], 
+      [epm_ProjectApproval].[epm_approvalitemtype] AS [epm_approvalitemtype], 
+      [epm_ProjectApproval].[epm_totalbuildingarea] AS [epm_totalbuildingarea], 
+      [epm_ProjectApproval].[epm_totalsalearea] AS [epm_totalsalearea], 
+      [epm_ProjectApproval].[epm_totalinvestment] AS [epm_totalinvestment], 
+      [epm_ProjectApproval].[epm_directdevcost] AS [epm_directdevcost], 
+      [epm_ProjectApproval].[epm_finishbackup] AS [epm_finishbackup]
+      FROM [dbo].[epm_ProjectApproval] AS [epm_ProjectApproval]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="epm_ProjectApprovalMoney" EntityType="EPM_MSCRMModel.Store.epm_ProjectApprovalMoney" store:Type="Views" store:Schema="dbo" store:Name="epm_ProjectApprovalMoney">
+            <DefiningQuery>SELECT 
+      [epm_ProjectApprovalMoney].[CreatedByName] AS [CreatedByName], 
+      [epm_ProjectApprovalMoney].[CreatedByYomiName] AS [CreatedByYomiName], 
+      [epm_ProjectApprovalMoney].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+      [epm_ProjectApprovalMoney].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+      [epm_ProjectApprovalMoney].[ModifiedByName] AS [ModifiedByName], 
+      [epm_ProjectApprovalMoney].[ModifiedByYomiName] AS [ModifiedByYomiName], 
+      [epm_ProjectApprovalMoney].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+      [epm_ProjectApprovalMoney].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+      [epm_ProjectApprovalMoney].[epm_ProjectApprovalItemName] AS [epm_ProjectApprovalItemName], 
+      [epm_ProjectApprovalMoney].[OwnerId] AS [OwnerId], 
+      [epm_ProjectApprovalMoney].[OwnerIdName] AS [OwnerIdName], 
+      [epm_ProjectApprovalMoney].[OwnerIdYomiName] AS [OwnerIdYomiName], 
+      [epm_ProjectApprovalMoney].[OwnerIdDsc] AS [OwnerIdDsc], 
+      [epm_ProjectApprovalMoney].[OwnerIdType] AS [OwnerIdType], 
+      [epm_ProjectApprovalMoney].[OwningUser] AS [OwningUser], 
+      [epm_ProjectApprovalMoney].[OwningTeam] AS [OwningTeam], 
+      [epm_ProjectApprovalMoney].[epm_ProjectApprovalMoneyId] AS [epm_ProjectApprovalMoneyId], 
+      [epm_ProjectApprovalMoney].[CreatedOn] AS [CreatedOn], 
+      [epm_ProjectApprovalMoney].[CreatedBy] AS [CreatedBy], 
+      [epm_ProjectApprovalMoney].[ModifiedOn] AS [ModifiedOn], 
+      [epm_ProjectApprovalMoney].[ModifiedBy] AS [ModifiedBy], 
+      [epm_ProjectApprovalMoney].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+      [epm_ProjectApprovalMoney].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+      [epm_ProjectApprovalMoney].[OwningBusinessUnit] AS [OwningBusinessUnit], 
+      [epm_ProjectApprovalMoney].[statecode] AS [statecode], 
+      [epm_ProjectApprovalMoney].[statuscode] AS [statuscode], 
+      [epm_ProjectApprovalMoney].[VersionNumber] AS [VersionNumber], 
+      [epm_ProjectApprovalMoney].[ImportSequenceNumber] AS [ImportSequenceNumber], 
+      [epm_ProjectApprovalMoney].[OverriddenCreatedOn] AS [OverriddenCreatedOn], 
+      [epm_ProjectApprovalMoney].[TimeZoneRuleVersionNumber] AS [TimeZoneRuleVersionNumber], 
+      [epm_ProjectApprovalMoney].[UTCConversionTimeZoneCode] AS [UTCConversionTimeZoneCode], 
+      [epm_ProjectApprovalMoney].[epm_name] AS [epm_name], 
+      [epm_ProjectApprovalMoney].[epm_ProjectApprovalItem] AS [epm_ProjectApprovalItem], 
+      [epm_ProjectApprovalMoney].[epm_year] AS [epm_year], 
+      [epm_ProjectApprovalMoney].[epm_type] AS [epm_type], 
+      [epm_ProjectApprovalMoney].[epm_Money] AS [epm_Money], 
+      [epm_ProjectApprovalMoney].[epm_newYear] AS [epm_newYear]
+      FROM [dbo].[epm_ProjectApprovalMoney] AS [epm_ProjectApprovalMoney]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="epm_ProjectInfo" EntityType="EPM_MSCRMModel.Store.epm_ProjectInfo" store:Type="Views" store:Schema="dbo" store:Name="epm_ProjectInfo">
+            <DefiningQuery>SELECT 
+      [epm_ProjectInfo].[CreatedByName] AS [CreatedByName], 
+      [epm_ProjectInfo].[CreatedByYomiName] AS [CreatedByYomiName], 
+      [epm_ProjectInfo].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+      [epm_ProjectInfo].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+      [epm_ProjectInfo].[ModifiedByName] AS [ModifiedByName], 
+      [epm_ProjectInfo].[ModifiedByYomiName] AS [ModifiedByYomiName], 
+      [epm_ProjectInfo].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+      [epm_ProjectInfo].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+      [epm_ProjectInfo].[epm_cityName] AS [epm_cityName], 
+      [epm_ProjectInfo].[epm_ProjectCompanyName] AS [epm_ProjectCompanyName], 
+      [epm_ProjectInfo].[OwnerId] AS [OwnerId], 
+      [epm_ProjectInfo].[OwnerIdName] AS [OwnerIdName], 
+      [epm_ProjectInfo].[OwnerIdYomiName] AS [OwnerIdYomiName], 
+      [epm_ProjectInfo].[OwnerIdDsc] AS [OwnerIdDsc], 
+      [epm_ProjectInfo].[OwnerIdType] AS [OwnerIdType], 
+      [epm_ProjectInfo].[OwningUser] AS [OwningUser], 
+      [epm_ProjectInfo].[OwningTeam] AS [OwningTeam], 
+      [epm_ProjectInfo].[epm_ProjectInfoId] AS [epm_ProjectInfoId], 
+      [epm_ProjectInfo].[CreatedOn] AS [CreatedOn], 
+      [epm_ProjectInfo].[CreatedBy] AS [CreatedBy], 
+      [epm_ProjectInfo].[ModifiedOn] AS [ModifiedOn], 
+      [epm_ProjectInfo].[ModifiedBy] AS [ModifiedBy], 
+      [epm_ProjectInfo].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+      [epm_ProjectInfo].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+      [epm_ProjectInfo].[OwningBusinessUnit] AS [OwningBusinessUnit], 
+      [epm_ProjectInfo].[statecode] AS [statecode], 
+      [epm_ProjectInfo].[statuscode] AS [statuscode], 
+      [epm_ProjectInfo].[VersionNumber] AS [VersionNumber], 
+      [epm_ProjectInfo].[ImportSequenceNumber] AS [ImportSequenceNumber], 
+      [epm_ProjectInfo].[OverriddenCreatedOn] AS [OverriddenCreatedOn], 
+      [epm_ProjectInfo].[TimeZoneRuleVersionNumber] AS [TimeZoneRuleVersionNumber], 
+      [epm_ProjectInfo].[UTCConversionTimeZoneCode] AS [UTCConversionTimeZoneCode], 
+      [epm_ProjectInfo].[epm_name] AS [epm_name], 
+      [epm_ProjectInfo].[epm_DevType] AS [epm_DevType], 
+      [epm_ProjectInfo].[epm_ProjectCompany] AS [epm_ProjectCompany], 
+      [epm_ProjectInfo].[epm_landUsage] AS [epm_landUsage], 
+      [epm_ProjectInfo].[epm_typedescription] AS [epm_typedescription], 
+      [epm_ProjectInfo].[epm_city] AS [epm_city], 
+      [epm_ProjectInfo].[epm_dockperson] AS [epm_dockperson]
+      FROM [dbo].[epm_ProjectInfo] AS [epm_ProjectInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="epm_salebackmoney_second" EntityType="EPM_MSCRMModel.Store.epm_salebackmoney_second" store:Type="Views" store:Schema="dbo" store:Name="epm_salebackmoney_second">
+            <DefiningQuery>SELECT 
+      [epm_salebackmoney_second].[CreatedByName] AS [CreatedByName], 
+      [epm_salebackmoney_second].[CreatedByYomiName] AS [CreatedByYomiName], 
+      [epm_salebackmoney_second].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+      [epm_salebackmoney_second].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+      [epm_salebackmoney_second].[ModifiedByName] AS [ModifiedByName], 
+      [epm_salebackmoney_second].[ModifiedByYomiName] AS [ModifiedByYomiName], 
+      [epm_salebackmoney_second].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+      [epm_salebackmoney_second].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+      [epm_salebackmoney_second].[epm_itemName] AS [epm_itemName], 
+      [epm_salebackmoney_second].[OwnerId] AS [OwnerId], 
+      [epm_salebackmoney_second].[OwnerIdName] AS [OwnerIdName], 
+      [epm_salebackmoney_second].[OwnerIdYomiName] AS [OwnerIdYomiName], 
+      [epm_salebackmoney_second].[OwnerIdDsc] AS [OwnerIdDsc], 
+      [epm_salebackmoney_second].[OwnerIdType] AS [OwnerIdType], 
+      [epm_salebackmoney_second].[OwningUser] AS [OwningUser], 
+      [epm_salebackmoney_second].[OwningTeam] AS [OwningTeam], 
+      [epm_salebackmoney_second].[epm_salebackmoney_secondId] AS [epm_salebackmoney_secondId], 
+      [epm_salebackmoney_second].[CreatedOn] AS [CreatedOn], 
+      [epm_salebackmoney_second].[CreatedBy] AS [CreatedBy], 
+      [epm_salebackmoney_second].[ModifiedOn] AS [ModifiedOn], 
+      [epm_salebackmoney_second].[ModifiedBy] AS [ModifiedBy], 
+      [epm_salebackmoney_second].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+      [epm_salebackmoney_second].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+      [epm_salebackmoney_second].[OwningBusinessUnit] AS [OwningBusinessUnit], 
+      [epm_salebackmoney_second].[statecode] AS [statecode], 
+      [epm_salebackmoney_second].[statuscode] AS [statuscode], 
+      [epm_salebackmoney_second].[VersionNumber] AS [VersionNumber], 
+      [epm_salebackmoney_second].[ImportSequenceNumber] AS [ImportSequenceNumber], 
+      [epm_salebackmoney_second].[OverriddenCreatedOn] AS [OverriddenCreatedOn], 
+      [epm_salebackmoney_second].[TimeZoneRuleVersionNumber] AS [TimeZoneRuleVersionNumber], 
+      [epm_salebackmoney_second].[UTCConversionTimeZoneCode] AS [UTCConversionTimeZoneCode], 
+      [epm_salebackmoney_second].[epm_name] AS [epm_name], 
+      [epm_salebackmoney_second].[epm_item] AS [epm_item], 
+      [epm_salebackmoney_second].[epm_year] AS [epm_year], 
+      [epm_salebackmoney_second].[epm_money] AS [epm_money], 
+      [epm_salebackmoney_second].[epm_newyear] AS [epm_newyear]
+      FROM [dbo].[epm_salebackmoney_second] AS [epm_salebackmoney_second]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="epm_salemoneyplan_second" EntityType="EPM_MSCRMModel.Store.epm_salemoneyplan_second" store:Type="Views" store:Schema="dbo" store:Name="epm_salemoneyplan_second">
+            <DefiningQuery>SELECT 
+      [epm_salemoneyplan_second].[CreatedByName] AS [CreatedByName], 
+      [epm_salemoneyplan_second].[CreatedByYomiName] AS [CreatedByYomiName], 
+      [epm_salemoneyplan_second].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+      [epm_salemoneyplan_second].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+      [epm_salemoneyplan_second].[ModifiedByName] AS [ModifiedByName], 
+      [epm_salemoneyplan_second].[ModifiedByYomiName] AS [ModifiedByYomiName], 
+      [epm_salemoneyplan_second].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+      [epm_salemoneyplan_second].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+      [epm_salemoneyplan_second].[epm_itemName] AS [epm_itemName], 
+      [epm_salemoneyplan_second].[OwnerId] AS [OwnerId], 
+      [epm_salemoneyplan_second].[OwnerIdName] AS [OwnerIdName], 
+      [epm_salemoneyplan_second].[OwnerIdYomiName] AS [OwnerIdYomiName], 
+      [epm_salemoneyplan_second].[OwnerIdDsc] AS [OwnerIdDsc], 
+      [epm_salemoneyplan_second].[OwnerIdType] AS [OwnerIdType], 
+      [epm_salemoneyplan_second].[OwningUser] AS [OwningUser], 
+      [epm_salemoneyplan_second].[OwningTeam] AS [OwningTeam], 
+      [epm_salemoneyplan_second].[epm_salemoneyplan_secondId] AS [epm_salemoneyplan_secondId], 
+      [epm_salemoneyplan_second].[CreatedOn] AS [CreatedOn], 
+      [epm_salemoneyplan_second].[CreatedBy] AS [CreatedBy], 
+      [epm_salemoneyplan_second].[ModifiedOn] AS [ModifiedOn], 
+      [epm_salemoneyplan_second].[ModifiedBy] AS [ModifiedBy], 
+      [epm_salemoneyplan_second].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+      [epm_salemoneyplan_second].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+      [epm_salemoneyplan_second].[OwningBusinessUnit] AS [OwningBusinessUnit], 
+      [epm_salemoneyplan_second].[statecode] AS [statecode], 
+      [epm_salemoneyplan_second].[statuscode] AS [statuscode], 
+      [epm_salemoneyplan_second].[VersionNumber] AS [VersionNumber], 
+      [epm_salemoneyplan_second].[ImportSequenceNumber] AS [ImportSequenceNumber], 
+      [epm_salemoneyplan_second].[OverriddenCreatedOn] AS [OverriddenCreatedOn], 
+      [epm_salemoneyplan_second].[TimeZoneRuleVersionNumber] AS [TimeZoneRuleVersionNumber], 
+      [epm_salemoneyplan_second].[UTCConversionTimeZoneCode] AS [UTCConversionTimeZoneCode], 
+      [epm_salemoneyplan_second].[epm_name] AS [epm_name], 
+      [epm_salemoneyplan_second].[epm_year] AS [epm_year], 
+      [epm_salemoneyplan_second].[epm_item] AS [epm_item], 
+      [epm_salemoneyplan_second].[epm_money] AS [epm_money], 
+      [epm_salemoneyplan_second].[epm_newyear] AS [epm_newyear]
+      FROM [dbo].[epm_salemoneyplan_second] AS [epm_salemoneyplan_second]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“EPM_MSCRM.dbo.epm_incomeindex_second”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="epm_incomeindex_second">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_incomeindex_secondId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_itemName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OwnerIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdYomiName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdDsc" Type="int" Nullable="false" />
+          <Property Name="OwnerIdType" Type="int" />
+          <Property Name="OwningUser" Type="uniqueidentifier" />
+          <Property Name="OwningTeam" Type="uniqueidentifier" />
+          <Property Name="epm_incomeindex_secondId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="OwningBusinessUnit" Type="uniqueidentifier" />
+          <Property Name="statecode" Type="int" Nullable="false" />
+          <Property Name="statuscode" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="int" />
+          <Property Name="OverriddenCreatedOn" Type="datetime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+          <Property Name="UTCConversionTimeZoneCode" Type="int" />
+          <Property Name="epm_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_prepareprofiletax" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_aftertaxrate" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_aftertaxrateinner" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_item" Type="uniqueidentifier" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“EPM_MSCRM.dbo.epm_ProjectApproval”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="epm_ProjectApproval">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_ProjectApprovalId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_ApprovePersonYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_ApprovePersonName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_ProjectName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OwnerIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdYomiName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdDsc" Type="int" Nullable="false" />
+          <Property Name="OwnerIdType" Type="int" />
+          <Property Name="OwningUser" Type="uniqueidentifier" />
+          <Property Name="OwningTeam" Type="uniqueidentifier" />
+          <Property Name="epm_ProjectApprovalId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="OwningBusinessUnit" Type="uniqueidentifier" />
+          <Property Name="statecode" Type="int" Nullable="false" />
+          <Property Name="statuscode" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="int" />
+          <Property Name="OverriddenCreatedOn" Type="datetime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+          <Property Name="UTCConversionTimeZoneCode" Type="int" />
+          <Property Name="epm_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_Project" Type="uniqueidentifier" />
+          <Property Name="epm_StartTime" Type="datetime" />
+          <Property Name="epm_EndTime" Type="datetime" />
+          <Property Name="epm_ApprovePerson" Type="uniqueidentifier" />
+          <Property Name="epm_OA" Type="nvarchar" MaxLength="1000" />
+          <Property Name="epm_block" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_itemName" Type="int" />
+          <Property Name="epm_newapproveperson" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_approvalitemtype" Type="int" />
+          <Property Name="epm_totalbuildingarea" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_totalsalearea" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_totalinvestment" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_directdevcost" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_finishbackup" Type="datetime" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“EPM_MSCRM.dbo.epm_ProjectApprovalMoney”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="epm_ProjectApprovalMoney">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_ProjectApprovalMoneyId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_ProjectApprovalItemName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OwnerIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdYomiName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdDsc" Type="int" Nullable="false" />
+          <Property Name="OwnerIdType" Type="int" />
+          <Property Name="OwningUser" Type="uniqueidentifier" />
+          <Property Name="OwningTeam" Type="uniqueidentifier" />
+          <Property Name="epm_ProjectApprovalMoneyId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="OwningBusinessUnit" Type="uniqueidentifier" />
+          <Property Name="statecode" Type="int" Nullable="false" />
+          <Property Name="statuscode" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="int" />
+          <Property Name="OverriddenCreatedOn" Type="datetime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+          <Property Name="UTCConversionTimeZoneCode" Type="int" />
+          <Property Name="epm_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_ProjectApprovalItem" Type="uniqueidentifier" />
+          <Property Name="epm_year" Type="int" />
+          <Property Name="epm_type" Type="int" />
+          <Property Name="epm_Money" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_newYear" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“EPM_MSCRM.dbo.epm_ProjectInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="epm_ProjectInfo">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_ProjectInfoId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_cityName" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_ProjectCompanyName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OwnerIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdYomiName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdDsc" Type="int" Nullable="false" />
+          <Property Name="OwnerIdType" Type="int" />
+          <Property Name="OwningUser" Type="uniqueidentifier" />
+          <Property Name="OwningTeam" Type="uniqueidentifier" />
+          <Property Name="epm_ProjectInfoId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="OwningBusinessUnit" Type="uniqueidentifier" />
+          <Property Name="statecode" Type="int" Nullable="false" />
+          <Property Name="statuscode" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="int" />
+          <Property Name="OverriddenCreatedOn" Type="datetime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+          <Property Name="UTCConversionTimeZoneCode" Type="int" />
+          <Property Name="epm_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_DevType" Type="int" />
+          <Property Name="epm_ProjectCompany" Type="uniqueidentifier" />
+          <Property Name="epm_landUsage" Type="nvarchar" MaxLength="1000" />
+          <Property Name="epm_typedescription" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_city" Type="uniqueidentifier" />
+          <Property Name="epm_dockperson" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“EPM_MSCRM.dbo.epm_salebackmoney_second”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="epm_salebackmoney_second">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_salebackmoney_secondId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_itemName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OwnerIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdYomiName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdDsc" Type="int" Nullable="false" />
+          <Property Name="OwnerIdType" Type="int" />
+          <Property Name="OwningUser" Type="uniqueidentifier" />
+          <Property Name="OwningTeam" Type="uniqueidentifier" />
+          <Property Name="epm_salebackmoney_secondId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="OwningBusinessUnit" Type="uniqueidentifier" />
+          <Property Name="statecode" Type="int" Nullable="false" />
+          <Property Name="statuscode" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="int" />
+          <Property Name="OverriddenCreatedOn" Type="datetime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+          <Property Name="UTCConversionTimeZoneCode" Type="int" />
+          <Property Name="epm_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_item" Type="uniqueidentifier" />
+          <Property Name="epm_year" Type="int" />
+          <Property Name="epm_money" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_newyear" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“EPM_MSCRM.dbo.epm_salemoneyplan_second”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="epm_salemoneyplan_second">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_salemoneyplan_secondId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="epm_itemName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="OwnerIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdYomiName" Type="nvarchar" MaxLength="160" />
+          <Property Name="OwnerIdDsc" Type="int" Nullable="false" />
+          <Property Name="OwnerIdType" Type="int" />
+          <Property Name="OwningUser" Type="uniqueidentifier" />
+          <Property Name="OwningTeam" Type="uniqueidentifier" />
+          <Property Name="epm_salemoneyplan_secondId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="OwningBusinessUnit" Type="uniqueidentifier" />
+          <Property Name="statecode" Type="int" Nullable="false" />
+          <Property Name="statuscode" Type="int" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="int" />
+          <Property Name="OverriddenCreatedOn" Type="datetime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="int" />
+          <Property Name="UTCConversionTimeZoneCode" Type="int" />
+          <Property Name="epm_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="epm_year" Type="int" />
+          <Property Name="epm_item" Type="uniqueidentifier" />
+          <Property Name="epm_money" Type="decimal" Precision="23" Scale="10" />
+          <Property Name="epm_newyear" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EPM_MSCRMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="EPM_MSCRMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="epm_incomeindex_second" EntityType="EPM_MSCRMModel.epm_incomeindex_second" />
+          <EntitySet Name="epm_ProjectApproval" EntityType="EPM_MSCRMModel.epm_ProjectApproval" />
+          <EntitySet Name="epm_ProjectApprovalMoney" EntityType="EPM_MSCRMModel.epm_ProjectApprovalMoney" />
+          <EntitySet Name="epm_ProjectInfo" EntityType="EPM_MSCRMModel.epm_ProjectInfo" />
+          <EntitySet Name="epm_salebackmoney_second" EntityType="EPM_MSCRMModel.epm_salebackmoney_second" />
+          <EntitySet Name="epm_salemoneyplan_second" EntityType="EPM_MSCRMModel.epm_salemoneyplan_second" />
+        </EntityContainer>
+        <EntityType Name="epm_incomeindex_second">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_incomeindex_secondId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_itemName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="OwnerIdName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdYomiName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdDsc" Type="Int32" Nullable="false" />
+          <Property Name="OwnerIdType" Type="Int32" />
+          <Property Name="OwningUser" Type="Guid" />
+          <Property Name="OwningTeam" Type="Guid" />
+          <Property Name="epm_incomeindex_secondId" Type="Guid" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="OwningBusinessUnit" Type="Guid" />
+          <Property Name="statecode" Type="Int32" Nullable="false" />
+          <Property Name="statuscode" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="Int32" />
+          <Property Name="OverriddenCreatedOn" Type="DateTime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="Int32" />
+          <Property Name="UTCConversionTimeZoneCode" Type="Int32" />
+          <Property Name="epm_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_prepareprofiletax" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_aftertaxrate" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_aftertaxrateinner" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_item" Type="Guid" />
+        </EntityType>
+        <EntityType Name="epm_ProjectApproval">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_ProjectApprovalId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_ApprovePersonYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_ApprovePersonName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_ProjectName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="OwnerIdName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdYomiName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdDsc" Type="Int32" Nullable="false" />
+          <Property Name="OwnerIdType" Type="Int32" />
+          <Property Name="OwningUser" Type="Guid" />
+          <Property Name="OwningTeam" Type="Guid" />
+          <Property Name="epm_ProjectApprovalId" Type="Guid" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="OwningBusinessUnit" Type="Guid" />
+          <Property Name="statecode" Type="Int32" Nullable="false" />
+          <Property Name="statuscode" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="Int32" />
+          <Property Name="OverriddenCreatedOn" Type="DateTime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="Int32" />
+          <Property Name="UTCConversionTimeZoneCode" Type="Int32" />
+          <Property Name="epm_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_Project" Type="Guid" />
+          <Property Name="epm_StartTime" Type="DateTime" />
+          <Property Name="epm_EndTime" Type="DateTime" />
+          <Property Name="epm_ApprovePerson" Type="Guid" />
+          <Property Name="epm_OA" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="epm_block" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_itemName" Type="Int32" />
+          <Property Name="epm_newapproveperson" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_approvalitemtype" Type="Int32" />
+          <Property Name="epm_totalbuildingarea" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_totalsalearea" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_totalinvestment" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_directdevcost" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_finishbackup" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="epm_ProjectApprovalMoney">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_ProjectApprovalMoneyId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_ProjectApprovalItemName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="OwnerIdName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdYomiName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdDsc" Type="Int32" Nullable="false" />
+          <Property Name="OwnerIdType" Type="Int32" />
+          <Property Name="OwningUser" Type="Guid" />
+          <Property Name="OwningTeam" Type="Guid" />
+          <Property Name="epm_ProjectApprovalMoneyId" Type="Guid" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="OwningBusinessUnit" Type="Guid" />
+          <Property Name="statecode" Type="Int32" Nullable="false" />
+          <Property Name="statuscode" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="Int32" />
+          <Property Name="OverriddenCreatedOn" Type="DateTime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="Int32" />
+          <Property Name="UTCConversionTimeZoneCode" Type="Int32" />
+          <Property Name="epm_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_ProjectApprovalItem" Type="Guid" />
+          <Property Name="epm_year" Type="Int32" />
+          <Property Name="epm_type" Type="Int32" />
+          <Property Name="epm_Money" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_newYear" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="epm_ProjectInfo">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_ProjectInfoId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_cityName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_ProjectCompanyName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="OwnerIdName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdYomiName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdDsc" Type="Int32" Nullable="false" />
+          <Property Name="OwnerIdType" Type="Int32" />
+          <Property Name="OwningUser" Type="Guid" />
+          <Property Name="OwningTeam" Type="Guid" />
+          <Property Name="epm_ProjectInfoId" Type="Guid" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="OwningBusinessUnit" Type="Guid" />
+          <Property Name="statecode" Type="Int32" Nullable="false" />
+          <Property Name="statuscode" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="Int32" />
+          <Property Name="OverriddenCreatedOn" Type="DateTime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="Int32" />
+          <Property Name="UTCConversionTimeZoneCode" Type="Int32" />
+          <Property Name="epm_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_DevType" Type="Int32" />
+          <Property Name="epm_ProjectCompany" Type="Guid" />
+          <Property Name="epm_landUsage" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="epm_typedescription" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_city" Type="Guid" />
+          <Property Name="epm_dockperson" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="epm_salebackmoney_second">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_salebackmoney_secondId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_itemName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="OwnerIdName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdYomiName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdDsc" Type="Int32" Nullable="false" />
+          <Property Name="OwnerIdType" Type="Int32" />
+          <Property Name="OwningUser" Type="Guid" />
+          <Property Name="OwningTeam" Type="Guid" />
+          <Property Name="epm_salebackmoney_secondId" Type="Guid" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="OwningBusinessUnit" Type="Guid" />
+          <Property Name="statecode" Type="Int32" Nullable="false" />
+          <Property Name="statuscode" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="Int32" />
+          <Property Name="OverriddenCreatedOn" Type="DateTime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="Int32" />
+          <Property Name="UTCConversionTimeZoneCode" Type="Int32" />
+          <Property Name="epm_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_item" Type="Guid" />
+          <Property Name="epm_year" Type="Int32" />
+          <Property Name="epm_money" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_newyear" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="epm_salemoneyplan_second">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="OwnerIdDsc" />
+            <PropertyRef Name="epm_salemoneyplan_secondId" />
+            <PropertyRef Name="statecode" />
+          </Key>
+          <Property Name="CreatedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="epm_itemName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="OwnerIdName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdYomiName" Type="String" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerIdDsc" Type="Int32" Nullable="false" />
+          <Property Name="OwnerIdType" Type="Int32" />
+          <Property Name="OwningUser" Type="Guid" />
+          <Property Name="OwningTeam" Type="Guid" />
+          <Property Name="epm_salemoneyplan_secondId" Type="Guid" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="ModifiedOn" Type="DateTime" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="OwningBusinessUnit" Type="Guid" />
+          <Property Name="statecode" Type="Int32" Nullable="false" />
+          <Property Name="statuscode" Type="Int32" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ImportSequenceNumber" Type="Int32" />
+          <Property Name="OverriddenCreatedOn" Type="DateTime" />
+          <Property Name="TimeZoneRuleVersionNumber" Type="Int32" />
+          <Property Name="UTCConversionTimeZoneCode" Type="Int32" />
+          <Property Name="epm_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="epm_year" Type="Int32" />
+          <Property Name="epm_item" Type="Guid" />
+          <Property Name="epm_money" Type="Decimal" Precision="23" Scale="10" />
+          <Property Name="epm_newyear" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EPM_MSCRMModelStoreContainer" CdmEntityContainer="EPM_MSCRMEntities">
+          <EntitySetMapping Name="epm_incomeindex_second"><EntityTypeMapping TypeName="EPM_MSCRMModel.epm_incomeindex_second"><MappingFragment StoreEntitySet="epm_incomeindex_second">
+            <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+            <ScalarProperty Name="CreatedByYomiName" ColumnName="CreatedByYomiName" />
+            <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+            <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+            <ScalarProperty Name="ModifiedByName" ColumnName="ModifiedByName" />
+            <ScalarProperty Name="ModifiedByYomiName" ColumnName="ModifiedByYomiName" />
+            <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+            <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+            <ScalarProperty Name="epm_itemName" ColumnName="epm_itemName" />
+            <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+            <ScalarProperty Name="OwnerIdName" ColumnName="OwnerIdName" />
+            <ScalarProperty Name="OwnerIdYomiName" ColumnName="OwnerIdYomiName" />
+            <ScalarProperty Name="OwnerIdDsc" ColumnName="OwnerIdDsc" />
+            <ScalarProperty Name="OwnerIdType" ColumnName="OwnerIdType" />
+            <ScalarProperty Name="OwningUser" ColumnName="OwningUser" />
+            <ScalarProperty Name="OwningTeam" ColumnName="OwningTeam" />
+            <ScalarProperty Name="epm_incomeindex_secondId" ColumnName="epm_incomeindex_secondId" />
+            <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+            <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+            <ScalarProperty Name="OwningBusinessUnit" ColumnName="OwningBusinessUnit" />
+            <ScalarProperty Name="statecode" ColumnName="statecode" />
+            <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+            <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+            <ScalarProperty Name="ImportSequenceNumber" ColumnName="ImportSequenceNumber" />
+            <ScalarProperty Name="OverriddenCreatedOn" ColumnName="OverriddenCreatedOn" />
+            <ScalarProperty Name="TimeZoneRuleVersionNumber" ColumnName="TimeZoneRuleVersionNumber" />
+            <ScalarProperty Name="UTCConversionTimeZoneCode" ColumnName="UTCConversionTimeZoneCode" />
+            <ScalarProperty Name="epm_name" ColumnName="epm_name" />
+            <ScalarProperty Name="epm_prepareprofiletax" ColumnName="epm_prepareprofiletax" />
+            <ScalarProperty Name="epm_aftertaxrate" ColumnName="epm_aftertaxrate" />
+            <ScalarProperty Name="epm_aftertaxrateinner" ColumnName="epm_aftertaxrateinner" />
+            <ScalarProperty Name="epm_item" ColumnName="epm_item" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="epm_ProjectApproval"><EntityTypeMapping TypeName="EPM_MSCRMModel.epm_ProjectApproval"><MappingFragment StoreEntitySet="epm_ProjectApproval">
+            <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+            <ScalarProperty Name="CreatedByYomiName" ColumnName="CreatedByYomiName" />
+            <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+            <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+            <ScalarProperty Name="ModifiedByName" ColumnName="ModifiedByName" />
+            <ScalarProperty Name="ModifiedByYomiName" ColumnName="ModifiedByYomiName" />
+            <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+            <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+            <ScalarProperty Name="epm_ApprovePersonYomiName" ColumnName="epm_ApprovePersonYomiName" />
+            <ScalarProperty Name="epm_ApprovePersonName" ColumnName="epm_ApprovePersonName" />
+            <ScalarProperty Name="epm_ProjectName" ColumnName="epm_ProjectName" />
+            <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+            <ScalarProperty Name="OwnerIdName" ColumnName="OwnerIdName" />
+            <ScalarProperty Name="OwnerIdYomiName" ColumnName="OwnerIdYomiName" />
+            <ScalarProperty Name="OwnerIdDsc" ColumnName="OwnerIdDsc" />
+            <ScalarProperty Name="OwnerIdType" ColumnName="OwnerIdType" />
+            <ScalarProperty Name="OwningUser" ColumnName="OwningUser" />
+            <ScalarProperty Name="OwningTeam" ColumnName="OwningTeam" />
+            <ScalarProperty Name="epm_ProjectApprovalId" ColumnName="epm_ProjectApprovalId" />
+            <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+            <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+            <ScalarProperty Name="OwningBusinessUnit" ColumnName="OwningBusinessUnit" />
+            <ScalarProperty Name="statecode" ColumnName="statecode" />
+            <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+            <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+            <ScalarProperty Name="ImportSequenceNumber" ColumnName="ImportSequenceNumber" />
+            <ScalarProperty Name="OverriddenCreatedOn" ColumnName="OverriddenCreatedOn" />
+            <ScalarProperty Name="TimeZoneRuleVersionNumber" ColumnName="TimeZoneRuleVersionNumber" />
+            <ScalarProperty Name="UTCConversionTimeZoneCode" ColumnName="UTCConversionTimeZoneCode" />
+            <ScalarProperty Name="epm_name" ColumnName="epm_name" />
+            <ScalarProperty Name="epm_Project" ColumnName="epm_Project" />
+            <ScalarProperty Name="epm_StartTime" ColumnName="epm_StartTime" />
+            <ScalarProperty Name="epm_EndTime" ColumnName="epm_EndTime" />
+            <ScalarProperty Name="epm_ApprovePerson" ColumnName="epm_ApprovePerson" />
+            <ScalarProperty Name="epm_OA" ColumnName="epm_OA" />
+            <ScalarProperty Name="epm_block" ColumnName="epm_block" />
+            <ScalarProperty Name="epm_itemName" ColumnName="epm_itemName" />
+            <ScalarProperty Name="epm_newapproveperson" ColumnName="epm_newapproveperson" />
+            <ScalarProperty Name="epm_approvalitemtype" ColumnName="epm_approvalitemtype" />
+            <ScalarProperty Name="epm_totalbuildingarea" ColumnName="epm_totalbuildingarea" />
+            <ScalarProperty Name="epm_totalsalearea" ColumnName="epm_totalsalearea" />
+            <ScalarProperty Name="epm_totalinvestment" ColumnName="epm_totalinvestment" />
+            <ScalarProperty Name="epm_directdevcost" ColumnName="epm_directdevcost" />
+            <ScalarProperty Name="epm_finishbackup" ColumnName="epm_finishbackup" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="epm_ProjectApprovalMoney"><EntityTypeMapping TypeName="EPM_MSCRMModel.epm_ProjectApprovalMoney"><MappingFragment StoreEntitySet="epm_ProjectApprovalMoney">
+            <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+            <ScalarProperty Name="CreatedByYomiName" ColumnName="CreatedByYomiName" />
+            <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+            <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+            <ScalarProperty Name="ModifiedByName" ColumnName="ModifiedByName" />
+            <ScalarProperty Name="ModifiedByYomiName" ColumnName="ModifiedByYomiName" />
+            <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+            <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+            <ScalarProperty Name="epm_ProjectApprovalItemName" ColumnName="epm_ProjectApprovalItemName" />
+            <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+            <ScalarProperty Name="OwnerIdName" ColumnName="OwnerIdName" />
+            <ScalarProperty Name="OwnerIdYomiName" ColumnName="OwnerIdYomiName" />
+            <ScalarProperty Name="OwnerIdDsc" ColumnName="OwnerIdDsc" />
+            <ScalarProperty Name="OwnerIdType" ColumnName="OwnerIdType" />
+            <ScalarProperty Name="OwningUser" ColumnName="OwningUser" />
+            <ScalarProperty Name="OwningTeam" ColumnName="OwningTeam" />
+            <ScalarProperty Name="epm_ProjectApprovalMoneyId" ColumnName="epm_ProjectApprovalMoneyId" />
+            <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+            <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+            <ScalarProperty Name="OwningBusinessUnit" ColumnName="OwningBusinessUnit" />
+            <ScalarProperty Name="statecode" ColumnName="statecode" />
+            <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+            <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+            <ScalarProperty Name="ImportSequenceNumber" ColumnName="ImportSequenceNumber" />
+            <ScalarProperty Name="OverriddenCreatedOn" ColumnName="OverriddenCreatedOn" />
+            <ScalarProperty Name="TimeZoneRuleVersionNumber" ColumnName="TimeZoneRuleVersionNumber" />
+            <ScalarProperty Name="UTCConversionTimeZoneCode" ColumnName="UTCConversionTimeZoneCode" />
+            <ScalarProperty Name="epm_name" ColumnName="epm_name" />
+            <ScalarProperty Name="epm_ProjectApprovalItem" ColumnName="epm_ProjectApprovalItem" />
+            <ScalarProperty Name="epm_year" ColumnName="epm_year" />
+            <ScalarProperty Name="epm_type" ColumnName="epm_type" />
+            <ScalarProperty Name="epm_Money" ColumnName="epm_Money" />
+            <ScalarProperty Name="epm_newYear" ColumnName="epm_newYear" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="epm_ProjectInfo"><EntityTypeMapping TypeName="EPM_MSCRMModel.epm_ProjectInfo"><MappingFragment StoreEntitySet="epm_ProjectInfo">
+            <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+            <ScalarProperty Name="CreatedByYomiName" ColumnName="CreatedByYomiName" />
+            <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+            <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+            <ScalarProperty Name="ModifiedByName" ColumnName="ModifiedByName" />
+            <ScalarProperty Name="ModifiedByYomiName" ColumnName="ModifiedByYomiName" />
+            <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+            <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+            <ScalarProperty Name="epm_cityName" ColumnName="epm_cityName" />
+            <ScalarProperty Name="epm_ProjectCompanyName" ColumnName="epm_ProjectCompanyName" />
+            <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+            <ScalarProperty Name="OwnerIdName" ColumnName="OwnerIdName" />
+            <ScalarProperty Name="OwnerIdYomiName" ColumnName="OwnerIdYomiName" />
+            <ScalarProperty Name="OwnerIdDsc" ColumnName="OwnerIdDsc" />
+            <ScalarProperty Name="OwnerIdType" ColumnName="OwnerIdType" />
+            <ScalarProperty Name="OwningUser" ColumnName="OwningUser" />
+            <ScalarProperty Name="OwningTeam" ColumnName="OwningTeam" />
+            <ScalarProperty Name="epm_ProjectInfoId" ColumnName="epm_ProjectInfoId" />
+            <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+            <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+            <ScalarProperty Name="OwningBusinessUnit" ColumnName="OwningBusinessUnit" />
+            <ScalarProperty Name="statecode" ColumnName="statecode" />
+            <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+            <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+            <ScalarProperty Name="ImportSequenceNumber" ColumnName="ImportSequenceNumber" />
+            <ScalarProperty Name="OverriddenCreatedOn" ColumnName="OverriddenCreatedOn" />
+            <ScalarProperty Name="TimeZoneRuleVersionNumber" ColumnName="TimeZoneRuleVersionNumber" />
+            <ScalarProperty Name="UTCConversionTimeZoneCode" ColumnName="UTCConversionTimeZoneCode" />
+            <ScalarProperty Name="epm_name" ColumnName="epm_name" />
+            <ScalarProperty Name="epm_DevType" ColumnName="epm_DevType" />
+            <ScalarProperty Name="epm_ProjectCompany" ColumnName="epm_ProjectCompany" />
+            <ScalarProperty Name="epm_landUsage" ColumnName="epm_landUsage" />
+            <ScalarProperty Name="epm_typedescription" ColumnName="epm_typedescription" />
+            <ScalarProperty Name="epm_city" ColumnName="epm_city" />
+            <ScalarProperty Name="epm_dockperson" ColumnName="epm_dockperson" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="epm_salebackmoney_second"><EntityTypeMapping TypeName="EPM_MSCRMModel.epm_salebackmoney_second"><MappingFragment StoreEntitySet="epm_salebackmoney_second">
+            <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+            <ScalarProperty Name="CreatedByYomiName" ColumnName="CreatedByYomiName" />
+            <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+            <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+            <ScalarProperty Name="ModifiedByName" ColumnName="ModifiedByName" />
+            <ScalarProperty Name="ModifiedByYomiName" ColumnName="ModifiedByYomiName" />
+            <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+            <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+            <ScalarProperty Name="epm_itemName" ColumnName="epm_itemName" />
+            <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+            <ScalarProperty Name="OwnerIdName" ColumnName="OwnerIdName" />
+            <ScalarProperty Name="OwnerIdYomiName" ColumnName="OwnerIdYomiName" />
+            <ScalarProperty Name="OwnerIdDsc" ColumnName="OwnerIdDsc" />
+            <ScalarProperty Name="OwnerIdType" ColumnName="OwnerIdType" />
+            <ScalarProperty Name="OwningUser" ColumnName="OwningUser" />
+            <ScalarProperty Name="OwningTeam" ColumnName="OwningTeam" />
+            <ScalarProperty Name="epm_salebackmoney_secondId" ColumnName="epm_salebackmoney_secondId" />
+            <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+            <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+            <ScalarProperty Name="OwningBusinessUnit" ColumnName="OwningBusinessUnit" />
+            <ScalarProperty Name="statecode" ColumnName="statecode" />
+            <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+            <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+            <ScalarProperty Name="ImportSequenceNumber" ColumnName="ImportSequenceNumber" />
+            <ScalarProperty Name="OverriddenCreatedOn" ColumnName="OverriddenCreatedOn" />
+            <ScalarProperty Name="TimeZoneRuleVersionNumber" ColumnName="TimeZoneRuleVersionNumber" />
+            <ScalarProperty Name="UTCConversionTimeZoneCode" ColumnName="UTCConversionTimeZoneCode" />
+            <ScalarProperty Name="epm_name" ColumnName="epm_name" />
+            <ScalarProperty Name="epm_item" ColumnName="epm_item" />
+            <ScalarProperty Name="epm_year" ColumnName="epm_year" />
+            <ScalarProperty Name="epm_money" ColumnName="epm_money" />
+            <ScalarProperty Name="epm_newyear" ColumnName="epm_newyear" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="epm_salemoneyplan_second"><EntityTypeMapping TypeName="EPM_MSCRMModel.epm_salemoneyplan_second"><MappingFragment StoreEntitySet="epm_salemoneyplan_second">
+            <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+            <ScalarProperty Name="CreatedByYomiName" ColumnName="CreatedByYomiName" />
+            <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+            <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+            <ScalarProperty Name="ModifiedByName" ColumnName="ModifiedByName" />
+            <ScalarProperty Name="ModifiedByYomiName" ColumnName="ModifiedByYomiName" />
+            <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+            <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+            <ScalarProperty Name="epm_itemName" ColumnName="epm_itemName" />
+            <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+            <ScalarProperty Name="OwnerIdName" ColumnName="OwnerIdName" />
+            <ScalarProperty Name="OwnerIdYomiName" ColumnName="OwnerIdYomiName" />
+            <ScalarProperty Name="OwnerIdDsc" ColumnName="OwnerIdDsc" />
+            <ScalarProperty Name="OwnerIdType" ColumnName="OwnerIdType" />
+            <ScalarProperty Name="OwningUser" ColumnName="OwningUser" />
+            <ScalarProperty Name="OwningTeam" ColumnName="OwningTeam" />
+            <ScalarProperty Name="epm_salemoneyplan_secondId" ColumnName="epm_salemoneyplan_secondId" />
+            <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+            <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+            <ScalarProperty Name="OwningBusinessUnit" ColumnName="OwningBusinessUnit" />
+            <ScalarProperty Name="statecode" ColumnName="statecode" />
+            <ScalarProperty Name="statuscode" ColumnName="statuscode" />
+            <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+            <ScalarProperty Name="ImportSequenceNumber" ColumnName="ImportSequenceNumber" />
+            <ScalarProperty Name="OverriddenCreatedOn" ColumnName="OverriddenCreatedOn" />
+            <ScalarProperty Name="TimeZoneRuleVersionNumber" ColumnName="TimeZoneRuleVersionNumber" />
+            <ScalarProperty Name="UTCConversionTimeZoneCode" ColumnName="UTCConversionTimeZoneCode" />
+            <ScalarProperty Name="epm_name" ColumnName="epm_name" />
+            <ScalarProperty Name="epm_year" ColumnName="epm_year" />
+            <ScalarProperty Name="epm_item" ColumnName="epm_item" />
+            <ScalarProperty Name="epm_money" ColumnName="epm_money" />
+            <ScalarProperty Name="epm_newyear" ColumnName="epm_newyear" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EpmDB" ZoomLevel="54">
+        <EntityTypeShape EntityType="EPM_MSCRMModel.epm_incomeindex_second" Width="1.5" PointX="0.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="EPM_MSCRMModel.epm_ProjectApproval" Width="1.5" PointX="2.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="EPM_MSCRMModel.epm_ProjectApprovalMoney" Width="1.5" PointX="4.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="EPM_MSCRMModel.epm_ProjectInfo" Width="1.5" PointX="6.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="EPM_MSCRMModel.epm_salebackmoney_second" Width="1.5" PointX="8.75" PointY="0.75" Height="0.4" IsExpanded="false" />
+        <EntityTypeShape EntityType="EPM_MSCRMModel.epm_salemoneyplan_second" Width="1.5" PointX="8.75" PointY="9.75" Height="7.89164306640625" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
